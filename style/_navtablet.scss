@@ -1,0 +1,170 @@
+@media  screen and (min-width: 768px) {
+    // navbar
+    
+    #principal{
+        background-color: white;
+        // box-shadow: 10px 5px 5px rgb(176, 174, 174);
+        .profile{
+            border-radius: 50px;
+        }
+        .gral__icons{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+                a{
+                    margin: 10px;
+                }
+        } 
+       
+        #boton{
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid blue;
+            color: blue;
+    
+        } 
+        #search__main{
+            visibility: hidden;
+        } 
+      }
+
+#aside__menu{
+        background-color: #F5F5F5;
+        li{
+            padding: 3px;
+            font-size: 15px;
+        }
+        li:hover{
+            background-color: rgb(215, 209, 240);
+            padding: 3px;
+            border-radius:5px;
+            text-decoration: underline solid blue;
+        }
+    
+        .aside__icons__all{
+            width: 230px;
+            height: 100px;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 5px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                list-style:none ;
+            }
+            li:hover{              
+                background-color: rgb(215, 209, 240);
+                border-radius:5px;
+            }
+    
+        }
+        .subtitle{
+            width: 200px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                color: #000;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 5px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                list-style:none ;
+            }
+            li:hover{              
+                background-color: rgb(215, 209, 240);  
+                padding: 5px;            
+            }
+        }
+        .cards{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .card1{
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            a{
+                text-align: center;
+                img{
+                    width: 210px;
+                    
+                }
+                align-items: center;
+            }
+        }
+        .card2{
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            h2{
+                font-size: 15px;
+                color: rgb(100, 100, 100);
+            }
+            p{
+                font-size: 15px;
+                font-weight: 600;
+            }
+            a{
+                align-items: center;
+                text-decoration: none;
+            }
+            ul li{
+                color: blue;
+                text-decoration: none;
+                background-color: transparent;
+            }
+        }
+    }
+    //   #aside__menu{
+    //     visibility: hidden;
+    // }
+
+// END NAVBAR
+#main__section{
+    margin: 0;
+    width: 100%;
+}
+#aside__menu{
+    width: 10%;
+}
+#aside__fixed{
+    height: 100vh;
+    // background-color: #333;
+    /* Esto lo mantendra en su sitio */
+    position: fixed;
+    margin-top: 60px;
+    top: 0;
+    left: 0;
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        li{
+            width: 25px;
+            height: 100px;
+            list-style: none;
+            padding: 5px;
+            img{
+                display: flex;
+                justify-content: center;
+            }            
+            p{
+                text-align: center;
+            }
+        }
+    }
+  }
+  #all__footer{
+    display: none;
+  }
+}

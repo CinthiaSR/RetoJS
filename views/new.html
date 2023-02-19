@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/styleview2.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png" />
+    <title>DEV Community 👩‍💻👨‍💻</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid fixed-top">        
+      <div class="row" id="principal">
+        <div class="col-5 d-flex align-content-center">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../img/logo.png" width="50" height="50" alt="">
+            </a>
+          </div>
+          <nav class="navbar" id="search">
+            <div class="container-fluid">
+              <h3>Create Post</h3>
+            </div>
+          </nav>
+          <nav class="d-flex" aria-label="View post modes">
+            <ul>
+              <li>
+                <button data-text="Edit" class="" id="btnEdit" type="button" aria-current="page">Edit</button>
+              </li>
+              <li>
+                <button data-text="Preview" class="" id="btnPreview" type="button">Preview</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col" >
+          <div class="gral__icons">
+            <button class="btn" id="btnClose">❌</button>
+          </div>
+        </div>
+      </div>       
+    </div>        
+  </header>
+  <main>
+    <div id="maincontainer">
+      <div class="card" id="form-card">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form id="formPostNew">
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <span class="btn btn-primary btn-file">
+                          Add a cover image 
+                          <input type="url" id="avatar" name="avatar" placeholder="Put URL image for the cover here..." required />
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control fs-3xl m:fs-4xl l:fs-5xl fw-bold s:fw-heavy lh-tight"
+                      id="title"
+                      name="title"
+                      placeholder="New post title here..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="symbols"
+                      name="symbols"
+                      placeholder="Put words of hashtags for share..."
+                      required 
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <nav class="navbar bg-light" id="navbar-toolbar">
+                      <div class="container-fluid" id="toolbar">
+                        <a class="navbar-brand" href="#">B</a>
+                        <a class="navbar-brand" href="#">I</a>  
+                        <a class="navbar-brand" href="#">🔗</a>  
+                        <a class="navbar-brand" href="#">⩸</a>  
+                        <a class="navbar-brand" href="#">⩨</a>                        
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <textarea
+                    class="form-control bcontent"
+                    id="content"
+                    name="content"
+                    placeholder="Write your post content here..."
+                    required></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="comments"
+                      name="comments"
+                      placeholder="Put a total of comments..."
+                      required 
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="date"
+                      name="date"
+                      placeholder="Put a date to publish..."
+                      required 
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="url"
+                      class="form-control"
+                      id="imagecontent"
+                      name="imagecontent"
+                      placeholder="Put URL image of the content..."
+                      required 
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="author"
+                      name="author"
+                      placeholder="Put the name of the author..."
+                      required 
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="reactions"
+                      name="reactions"
+                      placeholder="Put how many reactions are..."
+                      required 
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="timeread"
+                      name="timeread"
+                      placeholder="Put how many time has go out until the first publiting..."
+                      required 
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      name="Submit"
+                      value="Publish"
+                      class="btn btn-primary form-control"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div  id="text-card">
+      <h3>Writing a Great Post Title</h3>
+      <p>Think of your post title as a super short (but compelling!) description — like an overview of the actual post in one short sentence.
+        Use keywords where appropriate to help ensure people can find your post by search.
+        kjerhtvjkenmt5jk
+      </p>
+    </div>
+  </div>
+
+  </main>
+  <footer>
+    <div>
+      <a href="#">DEV Community 👩‍💻👨‍💻</a>— A constructive and inclusive social network for software developers. With you every step of your journey.
+        Built on <a href="#"> Forem</a>— the <a href="#">open source</a> software that powers <a href="#">DEV</a> and other inclusive communities.
+        Made with love and <a href="#">Ruby on Rails</a>. DEV Community 👩‍💻👨‍💻 © 2016 - 2022.        
+    </div>
+    <div class="footer__img">
+      🌱
+    </div>
+  </footer>
+  <script src="../scripts/code_newpost.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
